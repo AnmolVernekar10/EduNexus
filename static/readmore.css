@@ -1,0 +1,67 @@
+html{ 
+  background: url('back.jpg') no-repeat center fixed; 
+  background-size:cover;
+  color: white;
+  font-size: 62.5%;
+  
+}
+.devs{
+    margin: 7rem 0 0 0;
+  }
+  .grid {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+  }
+  .amey,.aditya{
+    color:hsl(43, 74%, 69%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 600px;
+    margin: 10px 20px;
+    padding: 50px;
+    align-items: center;
+    border: 2px #f0f0f0 solid;
+    border-radius: 30px;
+  
+  }
+  .devs img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid #f0f0f0;
+  }
+  /* Footer section */
+  #footer {
+    text-align: center;
+  }
+  footer p {
+    color: goldenrod;
+    font-size: large;
+  }
+  .icons{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+  gap:30px;
+  }
+  .icon-1{
+    padding-left: 4%;
+    padding-bottom: 5%;
+    padding-right: 4%;
+    color: hsl(0, 100%, 50%);
+    transition: all 0.2s;
+  }
+  .icon-1:hover {
+    padding-left: 4%;
+    padding-bottom: 5%;
+    padding-right: 4%;
+    color: hsl(0, 100%, 30%);
+  }
+  

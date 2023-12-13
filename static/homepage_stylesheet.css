@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Electrolize&display=swap');
+html{ 
+    background: url('back.jpg') no-repeat center fixed; 
+    background-size:cover;
+    color: white;
+    font-size: 62.5%;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Electrolize', sans-serif;    
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgb(2, 6, 27);
+}
+
+.logoimage img{
+    display: inline-block;
+    width: 25rem;
+    height: 15rem;
+}
+.projname a{
+    font-size: 4rem;
+    position: relative;
+    right: 5rem;
+    color: white;
+    text-decoration: none;
+}
+/* .logo{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    user-select: none;
+} */
+.navigation a{
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3rem;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.6rem;
+    width: 100%;
+    height: .3rem;
+    background: white;
+    border-radius: .5rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation .btnLogin-popup{
+    width: 13rem;
+    height: 5rem;
+    background: transparent;
+    border: .2rem solid white;
+    outline: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 4rem;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: white;
+    color: #162938;
+}
+
+.content{
+    width:122rem;
+    position: absolute;
+    top: 15rem;
+    color: white;
+    text-align: center;
+}
+.content h1{
+    margin-top: 3rem;
+    font-size: 6rem;
+}
+.content button{
+    width: 26rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin: 2rem 2rem;
+    border-radius: 6rem;
+    font-weight: bold;
+    border: .2rem solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    
+}
+.content button:hover{
+    transition: .5s;
+    /* background: rgb(192, 5, 195); */
+    /* background: rgb(188, 33, 168); */
+    background: rgb(147, 146, 146);
+}
+/* .footer{
+    position: absolute;
+    color: white;
+    height: 400px;
+    
+    width:100%;
+}
+@media(max-width:700px){
+    .content h1{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+} */
+.container{
+    width: 115rem;
+    height: 30rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    background: transparent;
+    backdrop-filter: blur(20rem); 
+    position: relative;
+    top: 73rem;
+    border:.2rem solid  white;
+    border-radius: 2rem;
+}
+.container h1{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.container p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.container button{
+    width: 17rem;
+    height: 5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    background: black;
+    color: white;
+    border: .2rem solid white;
+    border-radius: 2rem;
+    backdrop-filter: blur(5rem);
+}
+.container button:hover{
+    background-color: rgb(147, 146, 146);
+}
+
+.container1{
+    top: 103rem;
+    width: 125rem;
+    background-color:  rgb(2, 6, 27);
+    height: 15rem;
+    position: absolute;
+}
+#st{
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+#nd{
+    margin-top:1rem ;
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+.container1 pre{
+    margin-top: 1rem;
+    margin-left: 6rem;
+    font-size: 1.5rem;
+}
+.container1 .icon{
+    color: white;
+    margin-left: 6rem;
+    font-size: medium;
+}
+.glitch {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+
+  @media only screen and (max-width:600px) 
+  {
+    html,body{
+        overflow-x: hidden;
+        height: 100%;
+    }
+      html{ 
+        background: url('back.jpg') no-repeat center fixed; 
+        background-size:cover;
+        color: white;
+        font-size: 32.5%; 
+        overflow-x: visible;
+        
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        /* font-family: 'Bruno Ace SC', cursive; */
+        font-family: 'Electrolize', sans-serif;    
+    }
+    body{   
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 2rem 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        background-color: rgb(2, 6, 27);
+    }
+    
+    .logoimage img{
+        display: inline-block;
+        width: 25rem;
+        height: 15rem;
+    }
+    .projname a{
+        font-size: 4rem;
+        position: relative;
+        right: 5rem;
+        color: white;
+        text-decoration: none;
+    }
+    /* .logo{
+        color: white;
+        font-size: 50px;
+        text-align: left;
+        user-select: none;
+    } */
+    .navigation a{
+        position: relative;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        right: -8rem;
+        margin-top: 1rem;
+        display: table-header-group;
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -.6rem;
+        width: 100%;
+        height: .3rem;
+        background: white;
+        border-radius: .5rem;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+    .navigation a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    .navigation .btnLogin-popup{
+        width: 13rem;
+        height: 5rem;
+        background: transparent;
+        border: .2rem solid white;
+        outline: none;
+        border-radius: .6rem;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: white;
+        font-weight: 500;
+        margin-left: 4rem;
+        transition: .5s;
+    }
+    .navigation .btnLogin-popup:hover{
+        background: white;
+        color: #162938;
+    }
+    
+    .content{
+        width:61rem;
+        position: absolute;
+        top: 20rem;
+        color: white;
+        text-align: center;
+    }
+    .content h1{
+        margin-top: 3rem;
+        font-size: 6rem;
+    }
+    .content button{
+        width: 21rem;
+        padding: 1.5rem 0;
+        text-align: center;
+        margin: 3rem 1rem;
+        border-radius: 6rem;
+        font-weight: bold;
+        border: .2rem solid white;
+        background: black;
+        color: white;
+        cursor: pointer;
+        font-size: 2.5rem;
+        
+    }
+    .content button:hover{
+        transition: .5s;
+        /* background: rgb(192, 5, 195); */
+        /* background: rgb(188, 33, 168); */
+        background: rgb(147, 146, 146);
+    }
+    /* .footer{
+        position: absolute;
+        color: white;
+        height: 400px;
+        
+        width:100%;
+    }
+    @media(max-width:700px){
+        .content h1{
+            margin-top: 30px;
+            font-size: 20px;
+        }
+    } */
+    .container{
+        width:92%;
+        height: 44rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        background: transparent;
+        backdrop-filter: blur(20rem); 
+        position: relative;
+        top: 55rem;
+        border:.2rem solid  white;
+        border-radius: 2rem;
+    }
+    .container h1{
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .container p{
+        margin-left: 3rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .container button{
+        width: 14em;
+        height: 5rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        background: black;
+        color: white;
+        border: .2rem solid white;
+        border-radius: 2rem;
+        backdrop-filter: blur(5rem);
+    }
+    .container button:hover{
+        background-color: rgb(147, 146, 146);
+    }
+    
+    .container1{
+        top: 101rem;
+        width: 125rem;
+        background-color:  rgb(2, 6, 27);
+        height: 15rem;
+        position: absolute;
+    }
+    #st{
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+    #nd{
+        margin-top:1rem ;
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+    .container1 pre{
+        margin-top: 1rem;
+        margin-left: 6rem;
+        font-size: 1.5rem;
+    }
+    .container1 .icon{
+        color: white;
+        margin-left: 6rem;
+        font-size: medium;
+    }
+    .glitch {
+        font-size: 5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+          0.025em 0.04em 0 #fffc00;
+        animation: glitch 725ms infinite;
+      }
+      
+      .glitch span {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      
+      .glitch span:first-child {
+        animation: glitch 500ms infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+        transform: translate(-0.04em, -0.03em);
+        opacity: 0.75;
+      }
+      
+      .glitch span:last-child {
+        animation: glitch 375ms infinite;
+        clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+        transform: translate(0.04em, 0.03em);
+        opacity: 0.75;
+      }
+      
+  }
+  .creative h1{
+    position: relative;
+    font-size: 114vw;
+    color:#252839;
+    -webkit-text-stroke:0.5vw #329d52;
+    text-transform: uppercase;
+
+  }
+  .creative h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke:0.5vw #329d52;
+    border-right: 2px solid #01fe87 ;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+  @keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (min-width:601px)
+  {
+    .content{
+        width:67rem;
+        position: absolute;
+        top: 20rem;
+        left:43rem;
+        color: white;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 6rem;
+        display:inline;
+    }
+    .container{
+        width: 97%;
+        height: 30rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        background: transparent;
+        backdrop-filter: blur(20rem); 
+        position: relative;
+        top: 73rem;
+        border:.2rem solid  white;
+        border-radius: 2rem;
+    }
+    .container1{
+        top: 105rem;
+        width: 100%;
+        background-color:  rgb(2, 6, 27);
+        height: 15rem;
+        position: absolute;
+    }
+  }

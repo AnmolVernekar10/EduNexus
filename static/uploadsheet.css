@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');  
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Electrolize', sans-serif; 
+}
+html{
+    font-size: 40%;
+}
+body{
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: url('back.jpg')  no-repeat center fixed;
+    background-size:cover;
+}
+
+.container{
+    width: 40rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 2.5rem;
+    margin:50rem auto 0;
+    border-radius: 2rem;
+    height: 50rem;
+    position: relative;
+    left: -4rem;
+    top: -35rem;
+    border: 5px solid white;
+    color:white;
+    /* box-shadow: 0 1rem 3rem 0 rgb(254, 255, 255); */
+    box-shadow:  0 0.25rem 2rem 0.85rem rgb(254, 255, 255);
+    backdrop-filter: blur( 5rem );
+    -webkit-backdrop-filter: blur( 5rem);
+}
+.container h2{
+    position: relative;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.choose{
+    left: 6rem;
+        position: relative;
+        color: white;
+        top: 5rem;
+        width: 2rem;
+        height: 1rem;
+        font-size: 3rem;
+        display: inline;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 0.25rem solid white;
+}
+#sub{
+    color: white;
+    background-color: transparent;
+    background: transparent;
+    padding: 2rem;
+    border-radius: 0rem;
+    left: 11rem;
+    position: relative;
+    top: 15rem;
+    width: 12rem;
+    height: 6rem;
+    font-size: 3rem;
+    display: inline;
+    border: 1rem solid white;
+    padding: 0rem;
+    box-shadow: 0 0.25rem 2rem 0.85rem rgb(254, 255, 255);
+    border-radius: 2rem;
+    border: 0.35rem solid white;
+}
+.button{
+    width:5rem;
+}
+
+.label{
+    position: relative;
+    width: 4rem;
+}
+@media only screen and (max-width:600px) 
+{
+   
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        /* font-family: 'Bruno Ace SC', cursive; */
+        font-family: 'Electrolize', sans-serif; 
+    }
+    html{
+        font-size: 40%;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background: url('back.jpg')  no-repeat center fixed;
+        background-size:cover;
+    }
+    
+    .container{
+        width: 38rem;
+        font-weight: bold;
+        background-color: transparent;
+        padding: 2.5rem;
+        margin:50rem auto 0;
+        border-radius: 2rem;
+        height: 42rem;
+        position: relative;
+        left: 0rem;
+        top: -36rem;
+        border: 5px solid white;
+        color:white;
+        /* box-shadow: 0 1rem 3rem 0 rgb(254, 255, 255); */
+        box-shadow:  0 0.25rem 2rem 0.85rem rgb(254, 255, 255);
+        backdrop-filter: blur( 5rem );
+        -webkit-backdrop-filter: blur( 5rem);
+    }
+    .container h2{
+        position: relative;
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .choose{
+        left: 5rem;
+            position: relative;
+            color: white;
+            top: 5rem;
+            width: 2rem;
+            height: 1rem;
+            font-size: 3rem;
+            display: inline;
+            padding: 1rem;
+            border-radius: 2rem;
+            border: 0.25rem solid white;
+    }
+    #sub{
+        color: white;
+        background-color: transparent;
+        background: transparent;
+        padding: 2rem;
+        border-radius: 0rem;
+        left: 10rem;
+        position: relative;
+        top: 15rem;
+        width: 12rem;
+        height: 6rem;
+        font-size: 3rem;
+        display: inline;
+        border: 1rem solid white;
+        padding: 0rem;
+        box-shadow: 0 0.25rem 2rem 0.85rem rgb(254, 255, 255);
+        border-radius: 2rem;
+        border: 0.35rem solid white;
+    }
+    .button{
+        width:5rem;
+    }
+    
+    .label{
+        position: relative;
+        width: 4rem;
+    }
+    
+}

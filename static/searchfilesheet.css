@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html
+{
+    font-size: 32.5%;
+}
+.body{
+    margin:.1rem;
+}
+.maincontainer
+{
+    position: relative;
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+    border: 1.5rem solid grey;
+    color: white;
+    text-align: center;
+}
+.filename{
+    border: .4rem solid white;
+    border-radius: 1rem;
+    width: 12%;
+    height: 7%;
+    top: 40rem;
+    position: relative;
+    font-size: 3rem;
+    left:10%;
+    text-align: center;
+}
+.uploadname{
+    border: .4rem solid white;
+    border-radius: 1rem;
+    width: 16%;
+    height: 7%;
+    top: 31.1rem;
+    position: relative;
+    font-size: 3rem;
+    left: 50%;
+    text-align: center;
+}
+.uploaddate{
+    border: .4rem solid white;
+    border-radius: 1rem;
+    width: 20%;
+    height: 7%;
+    top: 46rem;
+    position: relative;
+    font-size: 3rem;
+    left: 10%;
+ }
+ 
+/* .content{
+    width:100%;
+    position: absolute;
+    top: 1%;
+    color:white;
+}
+.content button{
+    text-align:center;
+    width: 95%;
+    padding: 20px 0;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+}
+.content button:hover{
+    transition: .5s;
+    background: rgb(147, 146, 146);
+}  */
+.input-name{
+    width:100%;
+    position: relative;
+    margin: 5rem auto;
+}
+.input-name span{
+    margin-left: .1rem;
+    width: 2rem;
+} 
+.text-name{
+    position: relative;
+    top: -29rem;
+    width:95%;
+    font-size: 3rem;
+    font-weight: bold;
+    border:1rem solid black;
+    border-radius: 1.2rem;
+    height: 5rem;
+    background-color: transparent;
+    /* padding:8px 0 8px 40px; */
+}
+.input-name .icon{
+    right: 3rem;
+    position: absolute;
+    font-size: 1.8rem;
+    color: orange;
+    font-size: xx-large;
+}
+.email{
+    padding: .8rem;
+}
+.search-container {
+    position: relative;
+    /* top: 40%; */
+    top:0%;
+    /* left: 2%; */
+    left: 1%;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    background-color:white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.search-container input[type=text] {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    font-size: 3rem;
+}
+
+.search-container button {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 .5rem .5rem 0;
+}
+.search-container button:hover{
+    background-color: green;
+}
+/* .myframe iframe{
+    position: relative;
+    left: 90px;
+    height: 100vh;
+} */
+.card-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;   
+}
+.card{
+
+    flex:0 0 auto;
+    width: 200px;
+    margin-right: 10px;
+}
+/* Style for the result list container */
+#resultList {
+    margin-top: 20px;
+  }
+
+  /* Style for each result item */
+  #resultList div {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  /* Style for result item links */
+  #resultList a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Hover effect for result item links */
+  #resultList a:hover {
+    text-decoration: underline;
+  }

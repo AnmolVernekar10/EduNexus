@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://127.0.0.1:8000/search/?search=dread", function(data, status){
+      console.log(`Data: ${data}\nStatus: ${status}`);
+
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+
+function changeQuery(query){
+  var link = `http://127.0.0.1:8000/search/?search=${query}`;
+  console.log(link);
+
+  fetch(link)
+  .then(response => response.json())
+  .then(data => {
+    // Access the desired value from the received data object
+    console.log(data); // Output: value
+
+    // Clear previous results
+    $("#resultList").empty();
+
+    // Create a div element for each item in the fileData array
+    data["fileData"].forEach(element => {
+      var div = document.createElement("div");
+      div.textContent = element[0];
+      var anchor = document.createElement("a");
+      anchor.setAttribute("target", "abcd");
+      anchor.href = element[1];
+      anchor.appendChild(div);
+      $("#resultList").append(anchor);
+    });
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+</script>
+    <link rel="stylesheet" href="/static/searchfilesheet.css">
+    <style>
+        /* Style for the result list container */
+        #resultList {
+          margin-top: 20px;
+          display: flex;
+        /* flex-wrap: wrap; */
+         gap: 10px;  
+        }
+      
+        /* Style for each result item */
+        #resultList div {
+          position: relative;
+          background-color: #f2f2f2;
+          padding: 10px;
+          left:15px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          flex:0 0 auto;
+          width: 200px;
+          margin-right: 10px;
+          word-wrap: break-word;
+        }
+      
+        /* Style for result item links */
+        #resultList a {
+          color: #333;
+          text-decoration: none;
+          font-size: 2rem;
+        }
+      
+        /* Hover effect for result item links */
+        #resultList a:hover {
+          text-decoration: underline;
+        }
+      </style>
+      
+</head>
+<body scroll="no" style="overflow: hidden;">
+    <div class="maincontainer">
+        <!-- <div class="filename">
+            <h3>Filename</h3>
+            <p>xyz</p>
+        </div>
+        <div class="uploadname" id="c2">
+            <h3>Uploaded by</h3>
+            <p>xyz</p>
+        </div>
+        <div class="uploaddate" id="c3">
+            <h3>Date of upload</h3>
+            <p>xyz</p>
+        </div>  -->
+        
+        
+        
+        <div class="search-container">
+            <input type="text" oninput="changeQuery(this.value)" placeholder="Search...">
+            
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div id="resultList" class="card-container">
+
+        </div>
+        {% comment %} <div class="card-container">    
+            {% for f in l %}
+                <div class="card">
+                  <ul>
+                    <h3>Click to the link for download</h3>
+                    <li><a href="{{f.link}}">{{f.name}}</li>
+                  </ul>
+                </div>  
+            {% endfor %}
+        </div> {% endcomment %}
+        <div class="myframe">
+               
+            <!-- <iframe  name="abcd" style="position:relative; width:98%; left:100%; top:-351px; height:1157px" ></iframe> -->
+            <iframe  name="abcd" style="position:fixed; width: 49%; left:51%; top:0px; height:1157px" ></iframe>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

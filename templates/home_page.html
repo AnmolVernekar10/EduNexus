@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1" >
+    <link rel="stylesheet" href="/static/homepage_stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="logoimage">
+            <img src="/static/6.jpg" alt="EduNexus"/>
+        </div>
+
+        <div class="projname">
+            <h1 class="logo">EduNexus</h1>
+        </div> -->
+        <!-- <a href="PBL_Share_File_Prj\EduNexus\templates\home_page.html" target="_self" style="text-decoration: none; color: white; position: relative; left: -5rem;"> -->
+        <a href="{% url 'home_page'%}" target="_self" style="text-decoration: none; color: white; position: relative; left: -5rem;">
+            <p class="glitch">
+                <span aria-hidden="true">EduNexus</span>
+                EduNexus
+                <span aria-hidden="true">EduNexus</span>
+            </p>
+        </a>
+        <nav class="navigation">
+            <!-- {% comment %} <a href="login.html" target="_blank">Login</a> {% endcomment %}
+            <a href="{% url 'signin'%}" target="_blank">Login</a> -->
+            <!-- {% comment %} <a href="sign.html" target="_blank">Sign up</a> {% endcomment %}
+            <a href="{% url 'signup'%}" target="_blank">Sign up</a> -->
+            <a href="#info">About us</a>
+            <a href="{% url 'log'%}" target="_blank">Logout</a>
+        </nav>
+    </header>
+    <div class="content">   
+        <h1 data-text="Creative..." class="creative">Making Studying Social</h1>
+        <div>
+            <a>
+            <button type="button" onclick="location.href='{% url 'searchfile'%}'">Search for File</button>
+            </a>    
+            <a>
+            <button type="button" onclick="location.href='{% url 'main_page'%}'">Upload File</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="info" >
+            <h1>About us</h1>
+            <p>In today’s world, due to availability of vast amounts of data sources, the reliability of content is compromised. Our  project helps student users obtain reliable study content on a single platform efficiently.
+                <br><br>
+                EduNexus is a web platform which simplifies the process of finding and downloading study material for students. It is a portal where university students can share academic content like e-books, projects, notes, ppts, etc. quickly and conveniently. Any user can upload their material on the platform, which can be  accessed by all; or can search for material that has been uploaded by others, and download the same.
+            </p>
+        <!-- <button type="button" onclick="location.href='{% url 'readmore'%}'">Read More</button> -->
+        </div>
+    </div>
+    <div class="container1 ">
+            <h4 id="st">Contact us</h4>
+            <pre id="1">Mobile Number:  +91 0000000000</pre>
+            <pre id="1">Email:  student@gmail.com</pre>
+            <h4 id="nd">Follow us </h4>
+            <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+            <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+            <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

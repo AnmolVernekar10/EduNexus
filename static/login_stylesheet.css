@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');  
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Bruno Ace SC', cursive; */
+    font-family: 'Electrolize', sans-serif; 
+}
+html{
+    font-size: 35%;
+}
+body{
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: url('2.png') fixed;
+    background-size:cover;
+}
+
+.container{
+    background: rgba(246, 244, 244, 0.916);
+    padding: 2.5rem;
+    margin:5rem auto 0;
+    border-radius: 5rem;
+    box-shadow: 0 0 .7rem .5rem rgba(0,0,0,0.5);
+    height: 60rem;
+    position: relative;
+    left: -18%;
+    top: 15rem;
+}
+.container h2{
+    font-size: 5rem;
+    line-height: 2.4rem;
+    padding: 4rem;
+    text-align: center;
+}
+.input-name{
+    width:90%;
+    position: relative;
+    margin: 4rem auto;
+}
+
+.lock{
+    padding: .8rem 1.1rem;
+}
+.input-name span{
+    margin-left: 3.5rem;
+}
+.text-name{
+    width:100%;
+    padding:.8rem 0 .8rem 4rem;
+}
+.input-name i{
+    position: absolute;
+    font-size: 1.8rem;
+    color:blue;
+    border-right:.1rem solid #cccccc;
+}
+.email{
+    padding: .8rem;
+}
+.text-name,.name,.age{
+    border:.2rem solid black;
+    height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 2rem;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+     transition: all 0.30s ease-in-out;
+}
+.text-name:hover,.name:hover,.age:hover{
+    background-color: #ece1e1;
+}
+
+.text-name:focus,.name:focus
+{
+    border: .1rem solid blue;
+}
+
+.button{
+    background-color:blue;
+    color: white;
+    height: 5.5rem;
+    line-height: 3.5rem;
+    width: 100%;
+    border:none;
+    outline:none;
+    font-size: 3.5rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+}
+.button:hover{
+    background: green;
+}
+
+.input-name .icon{
+    position: absolute;
+    top:-35%;
+    right: 13px;
+    font-size: medium;
+    color: black;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size:medium;
+    color: black;
+    font-weight: 500;
+    margin: -10px 0 15px;
+    display: flex;
+    position: absolute;
+    top: 64%;
+    justify-content:space-between ;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color:black;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration:underline;
+}  
+
+.login-register{
+    font-size:medium;
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    border-color: black;
+    color: black;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.login-register a{
+    color:black;
+    text-decoration: none;
+}
+.login-register a:hover{
+    text-decoration:underline;
+}
+/* @media only screen and (max-width:600px) 
+{
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Electrolize', sans-serif; 
+    }
+    html{
+        font-size: 20%;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background: url('2.png') fixed;
+        background-size:cover;
+    }
+    
+    .container{
+        background: rgba(246, 244, 244, 0.916);
+        width: 70rem;
+        padding: 2.5rem;
+        margin:5rem auto 0;
+        border-radius: 2rem;
+        box-shadow: 0 0 .7rem .5rem rgba(0,0,0,0.5);
+        height: 80rem;
+        position: relative;
+        left: 0.5%;
+        top: 30rem;
+    }
+    .container h2{
+        font-size: 7rem;
+        line-height: 2.4rem;
+        padding: 4rem;
+        text-align: center;
+    }
+    .input-name{
+        width:100%;
+        position: relative;
+        margin: 2rem auto;
+    }
+    
+    .lock{
+        padding: .8rem 1.1rem;
+    }
+    .input-name span{
+        margin-left: 3.5rem;
+    }
+    .text-name{
+        width:100%;
+        padding:0.8rem 0 .8rem 4rem;
+    }
+    .input-name i{
+        position: absolute;
+        font-size: 1.8rem;
+        color:blue;
+        border-right:.1rem solid #cccccc;
+    }
+    .email{
+        padding: .8rem;
+    }
+    .text-name,.name,.age{
+        border:.2rem solid black;
+        height: 6rem;
+        font-size: 3.5rem;
+        border-radius: 2rem;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+         transition: all 0.30s ease-in-out;
+    }
+    .text-name:hover,.name:hover,.age:hover{
+        background-color: #ece1e1;
+    }
+    
+    .text-name:focus,.name:focus
+    {
+        border: .1rem solid blue;
+    }
+    
+    .button{
+        background-color:blue;
+        color: white;
+        height:8.5rem;
+        line-height: 3.5rem;
+        width: 100%;
+        border:none;
+        outline:none;
+        font-size: 3.5rem;
+        cursor: pointer;
+        margin-bottom: 3rem;
+        border-radius:10rem;
+        margin-top: 3rem;
+    }
+    .button:hover{
+        background: green;
+    }
+    
+    .input-name .icon{
+        position: absolute;
+        top:-87%;
+        right: 13px;
+        font-size: medium;
+        color: black;
+        line-height: 57px;
+    }
+    .remember-forgot{
+        font-size:4rem;
+        color: black;
+        font-weight: 500;
+        margin: -10px 0 15px;
+        display: flex;
+        position: absolute;
+        left: 5%;
+        top: 64%;
+        justify-content:space-between ;
+    }
+    .remember-forgot label input{
+        accent-color: black;
+        margin-right: 3px;
+    }
+    .remember-forgot a{
+        color:black;
+        text-decoration: none;
+    }
+    .remember-forgot a:hover{
+        text-decoration:underline;
+    }  
+    
+    .login-register{
+        font-size:4rem;
+        position: absolute;
+        top: 65%;
+        color: black;
+        font-weight: 500;
+        margin: 20px 0 20px;
+        display: flex;
+        left: 5%;
+        justify-content:space-between ;
+    }
+    
+    .login-register a{
+        color:black;
+        text-decoration: none;
+    }
+    .login-register a:hover{
+        text-decoration:underline;
+    }
+    
+} */

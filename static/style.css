@@ -1,0 +1,66 @@
+html{ 
+    background: url('back.jpg') no-repeat center fixed; 
+    background-size:cover;
+    color: white;
+}
+.left{
+    display: inline-block;
+    border: 8px solid blue;
+    text-align: center;
+}
+.left img{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+.mid{
+    border: 8px solid green;
+    margin: 10px auto;
+}
+.rightsignup{
+    position: absolute;
+    right: 170px;
+    font-size: 20px;
+    top: 8px;
+    height: 30px;
+    width: 65px;    
+    display: inline-block;
+    border: 8px solid red;
+}
+.rightLog{
+    position:absolute;
+    right: 280px;
+    font-size: 20px;
+    top: 8px;
+    height: 30px;
+    width: 65px;
+    display: inline-block;
+    border: 8px solid red;
+}
+.rightabout{
+    position:absolute;
+    font-size: 20px;
+    right: 60px;
+    top: 8px;
+    height: 30px;
+    width: 65p  x;
+    display: inline-block;
+    border: 8px solid red;
+}
+.navbar{
+    display:inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font: 23px;
+}
+.navbar li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover{
+    display: inline-block;
+    text-decoration:underline;
+}

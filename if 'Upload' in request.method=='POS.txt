@@ -1,0 +1,25 @@
+"""if 'Upload' in request.method=='POST':
+        file2=request.FILES['document']
+        document1=Files(file=file2)
+        document1.save(file2)
+        file_name = document1.filename()
+        upload_file(file_name)
+        print("hi")
+        link = download_file(file_name)
+    else:
+        print("jkdkdkdk")    
+    return render(request,"main_page.html",{
+        "name":nm,
+        #"link":link,
+    })"""
+    """if request.method=='POST':
+        if 'Upload' in request.method:
+            file2=request.FILES['document']
+            document1=Files(file=file2)
+            document1.save(file2)
+            file_name = document1.filename()
+            upload_file(file_name)
+            print("hi")
+            link = download_file(file_name)
+        else:
+            print("jkdkdkdk")""" 

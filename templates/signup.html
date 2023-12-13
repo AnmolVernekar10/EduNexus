@@ -1,0 +1,119 @@
+{% comment %} <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+{% if messg %}
+<script>
+    alert("{{messg}}");
+</script>   
+{% endif %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/styles_signup.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section >
+          <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>Login Form</h2>
+                    <form action="/postsignup/" method="post">
+                        {% csrf_token %}
+                        <div class="inputBox">
+                        
+                                         
+                        <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="inputBox">
+                        
+                        <input type="email" name="email">
+                        </div>
+                        <div class="inputBox">
+                        
+                        <input type="password" name="pass">
+                        </div>
+                        <div class="inputBox">
+                        <input type="submit" value="SignUp"> 
+                        </div>    
+                        <p class="forget">Forget Password?<a href="#">Click Here</a></p>       
+                    </form>
+                </div>    
+            </div>    
+         </div> 
+        </section>
+        <script src="" async defer></script>
+    </body>
+</html> {% endcomment %}
+<!DOCTYPE html>
+{% if messg %}
+<script>
+    alert("{{messg}}");
+</script>   
+{% endif %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/signup_stylesheet.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <h2>Sign up</h2>
+    <div class="form-container">
+        <form action="/postsignup/" method="post">
+            {% csrf_token %}
+            <div class="input-name">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <input type="text" placeholder="Username" name="name" class="name">
+            </div>
+
+            <div class="input-name">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email" placeholder="Email-Id" name="email" class="text-name">
+            </div>
+
+            <div class="input-name">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" placeholder="Password" name="pass" class="text-name">
+            </div>
+
+            <!-- <div class="input-name">
+                <input type="password" placeholder="Confirm password" class="text-name">
+            </div> -->
+        
+            <div class="input-name">
+                <input type="checkbox" class="check-button">
+                <label class="check">I accept the terms and conditions</label>
+            </div>
+
+            <div class="input-name">
+                <input type="submit" class="button" value="SignUp">
+            </div>
+        
+        </form>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    
+</body>
+
+</html>
